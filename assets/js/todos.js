@@ -37,6 +37,10 @@ $("span").click(function(event){
 
 $("input[type='text']").keypress(function(event){
 	if(event.which === 13){
+		//creating a new todo
      var todoText = $(this).val();
+
+     //create a new li and add to ul
+     $("ul").append("<li>abab</li>");
 	}
 });
