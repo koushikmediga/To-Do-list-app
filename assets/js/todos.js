@@ -26,6 +26,6 @@ $("li").click(function(){
 //click on X to delete a todo 
 
 $("span").click(function(event){
-	$(this).parent().remove();
+	$(this).parent().fadeOut();
 	event.stopPropagation();
 });
