@@ -1,3 +1,9 @@
+body{
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1{
 	background-color:#2980b9;
 	color: white;
@@ -38,12 +44,31 @@ li{
 li:nth-child(2n){
 	background-color: #f7f7f7;
 }
-
+span{
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width:40px;
+	display: inline-block;
+}
 input{
 	font-size: 18px;
 	background-color: #f7f7f7;
 	width: 100%;
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
+	color: #2980b9;
+}
 
+input:focus{
+	background-color: white;
+	border: 3px solid #2980b9;
+	outline::none;
+}
+
+
+.fa-plus{
+	float: right;
 }
