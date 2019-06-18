@@ -1,4 +1,4 @@
-$("li").click(function(){
+$("ul").on("click", "li", function(){
     $(this).toggleClass("completed");
 	
     /* this is old code used for same functionality
@@ -25,7 +25,7 @@ $("li").click(function(){
 
 //click on X to delete a todo 
 
-$("span").click(function(event){
+$("ul").on("click","span", function(event){
 	$(this).parent().fadeOut(500,function(){
            $(this).remove();
 	});
