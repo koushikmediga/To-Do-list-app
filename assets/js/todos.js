@@ -44,3 +44,9 @@ $("input[type='text']").keypress(function(event){
      $("ul").append("<li><span><i class='fa fa-trash'></i></span> "  + todoText + "</li>");
 	}
 });
+
+//toggling +
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+
+})

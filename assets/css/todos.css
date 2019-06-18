@@ -33,6 +33,7 @@ ul{
 	padding: 0;
 }
 
+
 li{
 	background-color: white;
 	height: 40px;
@@ -41,18 +42,28 @@ li{
 
 }
 
+
 li:nth-child(2n){
 	background-color: #f7f7f7;
 }
+
 span{
 	background-color: #e74c3c;
 	height: 40px;
 	margin-right: 20px;
 	text-align: center;
 	color: white;
-	width:40px;
+	width:0;
 	display: inline-block;
+	transition: 0.23s linear;
+	opacity: 0;
 }
+
+li:hover span {
+	width:40px;
+	opacity: 1;
+}
+
 input{
 	font-size: 18px;
 	background-color: #f7f7f7;
@@ -60,6 +71,7 @@ input{
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
 	color: #2980b9;
+	borrder: 3px solid rgba(0,0,0,0);
 }
 
 input:focus{
